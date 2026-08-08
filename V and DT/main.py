@@ -1,7 +1,16 @@
 # Abyy
 
-# v
-NamaSaya = input("Masukan Namamu: ")
-umur = input("Masukan Umur: ")
+# need insert: v, i, f, b
 
-print(f"Halo, saya {NamaSaya}. umur {umur}.")
+# v
+name = input("Your name: ")
+email = input("Your valid email: ")
+
+# i
+age = int(input("Your age: "))
+
+
+# result of v and i
+print()
+
+# f
