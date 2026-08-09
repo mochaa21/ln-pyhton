@@ -14,3 +14,22 @@ market_data = {
     'prices': [2045.50, 2055.00], # [Harga Buka, Harga Saat Ini]
     'limits': [2040.00, 2060.00]  # [Stop Loss, Take Profit]
 }
+
+def cek_sinyal(market):
+
+    # harga saat ini
+    price_now = market['prices'][1]
+
+    # stoploss and tp
+    sl = market['limits'][0]
+    tp = market['limits'][1]
+
+    # keputusan
+    if price_now >= tp:
+        print("Take Profit Tersentuh! Jual sekarang.")
+    if price_now <= sl:
+        print("Stop Loss Tersentuh! Cut loss sekarang.")
+    else:
+        print("Harga masih aman, tahan posisi.")
+
+cek_sinyal(market_data)
