@@ -27,7 +27,7 @@ def cek_sinyal(market):
     # keputusan
     if price_now >= tp:
         print("Take Profit Tersentuh! Jual sekarang.")
-    if price_now <= sl:
+    elif price_now <= sl:
         print("Stop Loss Tersentuh! Cut loss sekarang.")
     else:
         print("Harga masih aman, tahan posisi.")
