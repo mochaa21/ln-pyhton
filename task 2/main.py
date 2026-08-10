@@ -26,3 +26,30 @@ riwayat_trading = [
     {'hasil': 'TP', 'profit': 20.0},
     {'hasil': 'SL', 'profit': -8.5}
 ]
+
+# your code
+
+def rekap_harian(riwayat):
+    # tampung
+    total_profit = 0
+
+    for trade in riwayat:
+        total_profit += trade['profit']
+
+    jumlah_tp = 0
+    jumlah_sl = 0
+
+    # looping
+    for hasil in riwayat:
+        if hasil['hasil'] == 'TP':
+            jumlah_tp += 1
+        elif hasil['hasil'] == 'SL':
+            jumlah_sl += 1
+        else:
+            print('Error..')
+
+    print(f"Total TP: {jumlah_tp}")
+    print(f"Total SL: {jumlah_sl}")
+    print(f"Total profit: {total_profit}")
+
+rekap_harian(riwayat_trading)
