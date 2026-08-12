@@ -1,5 +1,5 @@
-text = "thisLeonaNikkiisLeonaNikkiaLeonaNikkistring"
+player_action = ['W', 'X', 'A', 'B', 'C', 'D']
 
-textsplit = text.split("LeonaNikki")
+action_join = " ".join(player_action)
 
-print(textsplit)
+print(action_join)
