@@ -1,5 +1,5 @@
-uberkommandant = "thisLeonaNikkiisLeonaNikkiaLeonaNikkistring"
+text = "thisLeonaNikkiisLeonaNikkiaLeonaNikkistring"
 
-uberkommandantsplit = uberkommandant.split("LeonaNikki")
+textsplit = text.split("LeonaNikki")
 
-print(uberkommandantsplit)
+print(textsplit)
