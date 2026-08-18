@@ -7,10 +7,16 @@ print(action_join)
 r = 1
 c = 0
 
-isTuple = (r, c)
+isTuple = ('Leona', 'Lihanna', 'Ariel', 'Ashera', 'Tessa')
 
-unpackingTuple = 0
+extract_one = isTuple[2]
 
-r, c = unpackingTuple
+print(extract_one)
 
-print(unpackingTuple)
+(unpack0, unpack1, unpack2, unpack3, unpack4) = isTuple
+
+print(unpack0)
+print(unpack1)
+print(unpack2)
+print(unpack3)
+print(unpack4)
