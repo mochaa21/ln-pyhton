@@ -20,3 +20,15 @@ print(unpack1)
 print(unpack2)
 print(unpack3)
 print(unpack4)
+
+rows = '-- --'
+
+sl = rows[:0]
+sp = rows[1:]
+
+print(sl)
+print(sp)
+
+Ars = '' + '0' + '-  --'
+
+print(Ars)
